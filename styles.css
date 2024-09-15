@@ -1,0 +1,139 @@
+/* styles.css */
+@font-face {
+    font-family: 'Agency FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Agency FB Bold'), url('AGENCYB.woff') format('woff');
+}
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Agency FB Bold', 'Pretendard Variable';
+    text-align: center;
+}
+
+#b1 box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 325px;
+    background:linear-gradient(-56deg,#FD6D6D,#FFA1A1);
+    box-shadow: 0 0 15px #FF3A3A66;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    height: 64px;
+    width: 325px;
+    position: relative;
+    color:white;
+    text-shadow: 0 0 4px #00000050;
+}
+
+#b1 a1{
+    margin-top: 9px;
+    font-family: 'Pretendard Variable';
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#b1 a2{
+    font-family: "Agency FB Bold";
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+table {
+    width: 325px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 70%;
+    font-family: 'Agency FB Bold', 'Pretendard Variable';
+    font-size: 20px;
+    height:494px;
+    background: #000000aa;
+    color: #fff;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    box-shadow: 0 0 15px #00000066;
+}
+
+thead {
+    font-family: 'Pretendard Variable';
+    font-size:14px;
+    font-weight: 900;
+}
+
+q1 {
+    display:block;
+    width:30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+q2 {
+    display:block;
+    width:160px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+q3 {
+    display:block;
+    width:31px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+q4 {
+    display:block;
+    width:38px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+tr {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 301px;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-shadow: 0 0 4px #00000050;
+    transition:0.4s ease-in-out;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px;
+    border-width: 1px 0px 0px 0px ;
+    border-style: solid;
+    border-color: #ffffff40;
+    transition:0.6s ease-in-out;
+}
+
+th {
+    padding-top: 12px;
+    line-height: 100%;
+    margin:0px;
+}
+
+.rank {
+    width: 30px;
+}
+
+.name {
+    width: 165px; 
+}
+
+.live, .kill {
+    width: 30px;
+}
+
+.total {
+    width: 40px;
+}
+
+tbody tr {
+    transition: transform 0.5s ease-in-out;
+}
