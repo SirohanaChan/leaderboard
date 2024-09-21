@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadScoreButton.addEventListener('click', () => {
         const name = document.getElementById('name').value;
         if (!name) {
-            alert('Please enter a name to load the score.');
+            alert('점수를 불러오려면 이름을 적어주세요.');
             return;
         }
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('score1').value = existingScore.score1;
             document.getElementById('score2').value = existingScore.score2;
         } else {
-            alert('No score found for the given name.');
+            alert('해당 유저에게 주어진 점수가 없습니다.');
         }
     });
 
@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
         scores.sort((a, b) => b.totalScore - a.totalScore); // Sort by total score descending
         localStorage.setItem('scores', JSON.stringify(scores));
 
-        alert('Score submitted successfully!');
+        alert('점수가 업데이트되었습니다.');
         scoreForm.reset();
     });
 
     resetButton.addEventListener('click', () => {
         localStorage.removeItem('scores');
-        alert('Leaderboard has been reset.');
+        alert('리더보드가 초기화되었습니다.');
     });
 });

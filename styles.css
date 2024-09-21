@@ -126,11 +126,11 @@ th {
     width: 165px; 
 }
 
-.live, .kill {
+.score1, .score2 {
     width: 30px;
 }
 
-.total {
+.totalScore {
     width: 40px;
 }
 

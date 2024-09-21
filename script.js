@@ -24,17 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
             row.cells[1].classList.add('name');
             row.insertCell(2).textContent = ''; // Empty cell to create the separation
             row.insertCell(3).textContent = score.score1;
-            row.cells[3].classList.add('live');
+            row.cells[3].classList.add('score1');
             row.insertCell(4).textContent = score.score2;
-            row.cells[4].classList.add('kill');
+            row.cells[4].classList.add('score2');
             row.insertCell(5).textContent = score.totalScore;
-            row.cells[5].classList.add('total');
+            row.cells[5].classList.add('totalScore');
 
             // Apply animation if the row position has changed
             const previousIndex = rowPositions.get(score.name);
             if (previousIndex !== undefined && previousIndex !== index) {
-                row.style.transition = 'transform 1s ease-in-out';
-                row.style.transform = `translateY(${(previousIndex - index) * 100}%)`;
+                row.style.transition = 'transform 0.5s ease-in-out';
+                row.style.transform = `translateY(${(previousIndex - index)}%)`;
                 setTimeout(() => {
                     row.style.transform = `translateY(0)`;
                 }, 0);
